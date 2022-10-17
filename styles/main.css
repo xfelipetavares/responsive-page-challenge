@@ -75,11 +75,16 @@ button:hover {
 }
 
 .caixinhas {
-  width: 37.4rem;
+  max-width: 37.4rem;
   height: 42.3rem;
   position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1) ;
   height: 42.3rem;
+}
+
+.wrapper {
+  max-width: min(40.7rem, 100%);
+  margin: auto;
 }
 
 section div {
@@ -95,6 +100,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  margin: auto;
 }
 
 main h3 {
