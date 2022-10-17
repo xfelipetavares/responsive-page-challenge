@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
-
 :root {
   --purple: #6c63ff;
   --purple-light: #d7d4ff;
@@ -11,15 +10,12 @@
 
   font-size: 62.5%;
 }
-
 /* ============ GLOBAL ============ */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
 h1,
 h2,
 h3,
@@ -28,94 +24,73 @@ h5,
 h5 {
   font-family: Merriweather;
 }
-
 p {
   color: var(--gray);
 }
-
 h2 {
   font-size: 3.2rem;
 }
-
 body {
   width: 100%;
   font-family: Lato;
   font-size: 1.6rem;
 }
-
 button:hover {
   cursor: pointer;
 }
-
 /* =========== MAIN =========== */
-
 .laranja {
   background-color: #ff6363;
 }
-
 .azul {
  background-color: #63ECFF;
 }
-
 .rosa {
   background-color: #F363FF;
 }
-
 .verde {
   background-color: #63FF73;
 }
-
 .amarelo {
   background-color: #FFDD63;
-
 }
-
 .roxo {
   background-color: #6663FF;
 }
-
 .caixinhas {
   max-width: 37.4rem;
   height: 42.3rem;
-  position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1) ;
   height: 42.3rem;
+  display: flex;
+  flex-direction: column-reverse;
 }
-
 .wrapper {
   max-width: min(40.7rem, 100%);
   margin: auto;
 }
-
 section div {
   padding: 2.4rem 3.2rem 3.1rem 3.2rem;
   background-color: var(--white);
-  position: absolute;
   bottom: 0;
   height: 22.2rem;
 }
-
 main {  
   padding: 7.5rem 1.9rem;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
-  margin: auto;
 }
-
 main h3 {
   font-size: 2.4rem;
   margin-bottom: 2.6rem;
 }
-
 main p {
   line-height: 3rem;
   font-size: 1.8rem;
 }
-
 /* =========== HEADER =========== */
-
-
 header {
     background: var(--purple-light);
     display: flex;
@@ -124,24 +99,20 @@ header {
     height: 80rem;
     padding-inline: 3.2rem;
 }
-
 header h2 {
     width: 100%;
     margin-top: 5.5rem;
 }
-
 header #texto {
     font-size: 1.8rem;
     width: 100%;
     margin-top: 1.8rem;
     line-height: 3.2rem;
 }
-
 header #presentinho {
     width: 100%;
     align-self: center;
 }
-
 header #botao-header {
     background-color: var(--purple);
     color: var(--white);
@@ -153,16 +124,13 @@ header #botao-header {
     margin-bottom: 8.8rem;
     font-size: 2rem;
 }
-
-/* =============== FOOTER ================= */
-
+/* =============== FOOTER ============= */
 footer {
   width: 100%;
   height: 70rem;
   background-color: var(--purple-light);
   padding: 8.3rem 2rem 6.6rem 2rem;
 }
-
 footer form {
   max-width: min(40.7rem, 100%);
   margin: auto;
@@ -171,12 +139,10 @@ footer form {
   align-items: center;
   gap: 2rem;
 }
-
 footer h2 {
   margin-bottom: 1.6rem;
   line-height: 40.22px;
 }
-
 footer button {
   margin-top: 2.5rem;
   display: flex;
@@ -187,19 +153,15 @@ footer button {
   background-color: var(--purple);
   color: var(--white);
 }
-
 footer input {
   height: 6rem;
 }
-
 footer textarea {
   height: 15rem;
 }
-
 footer textarea::placeholder {
   font-family: Lato;
 }
-
 footer input,
 footer textarea,
 footer button {
@@ -207,4 +169,22 @@ footer button {
   border-radius: 5px;
   border: none;
   padding: 2rem;
+}
+/* ========= DESKTOP ========= */
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+  }
+  header div.wrapper {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  header div.wrapper img {
+    max-width: 50rem;
+  }
+  header div.wrapper div {
+    max-width: 38.9rem;
+  }
 }
