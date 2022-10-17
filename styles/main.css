@@ -66,3 +66,6 @@ h2 {
   margin-bottom: 8.8rem;
   font-size: 2rem;
 }
+#botao-header:hover {
+  cursor: pointer;
+}
