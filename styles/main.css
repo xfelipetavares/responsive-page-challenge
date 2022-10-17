@@ -10,6 +10,7 @@
 
     font-size: 62.5%;
 }
+/* ============ GLOBAL ============ */
 * {
     padding: 0;
     margin: 0;
@@ -23,10 +24,19 @@ h5,
 h5 {
     font-family: Merriweather;
 }
+p{
+    color: var(--gray);
+}
+h2 {
+    font-size: 3.2rem;
+}
 body {
     width: 100%;
     font-family: Lato;
     font-size: 1.6rem;
+}
+button:hover{
+    cursor: pointer;
 }
 
 /* =============== FOOTER ================= */
@@ -46,7 +56,6 @@ footer form {
 }
 footer h2 {
     margin-bottom: 1.6rem;
-    font-size: 3.2rem;
     line-height: 40.22px;
 }
 footer button {
