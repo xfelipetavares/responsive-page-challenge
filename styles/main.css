@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
-:root{
-    --purple:#6C63FF;
-    --purple-light: #D7D4FF;
+:root {
+    --purple: #6c63ff;
+    --purple-light: #d7d4ff;
     --gray: #555555;
-    --gray-dark: #2A2A2A;
-    --white-200: #F9F9F9;
-    --white: #FFFFFF;
+    --gray-dark: #2a2a2a;
+    --white-200: #f9f9f9;
+    --white: #ffffff;
 
     font-size: 62.5%;
 }
@@ -15,7 +15,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-h1, h2, h3, h4, h5, h5{
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
     font-family: Merriweather;
 }
 body {
@@ -23,4 +28,3 @@ body {
     font-family: Lato;
     font-size: 1.6rem;
 }
-
